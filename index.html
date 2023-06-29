@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <!-- Rating state start -->
+      <article class="component" id="component-rating">
+        <form>
+          <div class="container-icon">
+            <img src="./images/icon-star.svg" alt="star icon">
+          </div>
+          <h2>How did we do?</h2>
+          <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+          <div class="ratings">
+            <input class="radio-btn" type="radio" name="rating" value="1" id="one">
+            <label class="radio-lbl" for="one">1</label>
+            <input class="radio-btn" type="radio" name="rating" value="2" id="two">
+            <label class="radio-lbl" for="two">2</label>
+            <input class="radio-btn" type="radio" name="rating" value="3" id="three">
+            <label class="radio-lbl" for="three">3</label>
+            <input class="radio-btn" type="radio" name="rating" value="4" id="four">
+            <label class="radio-lbl" for="four">4</label>
+            <input class="radio-btn" type="radio" name="rating" value="5" id="five">
+            <label class="radio-lbl" for="five">5</label>
+          </div>
+          <input type="button" value="Submit" id="submit" class="submit-btn" disabled="disabled">
+        </form>
+      </article>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <article class="component text-center" id="component-confirmation">
+        <img src="./images/illustration-thank-you.svg" alt="thank you illustration"><br>
+        <p class="confirmation">You selected <span id="rating-selected">0</span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </article>
+      <!-- Thank you state end -->
+    </div>
+  </div>
+</body>
+
+</html>
